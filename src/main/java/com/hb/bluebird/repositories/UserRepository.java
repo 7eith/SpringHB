@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
@@ -52,12 +53,21 @@ public class UserRepository {
 				if (userStacks != null) {					
 					Boolean hasFound = false;
 					
-					for (String currentStack: userStacks) {
-						if (currentStack.equalsIgnoreCase(_stack)) {
-							hasFound = true;
-							userStacks.remove(currentStack);
-						}
-					}
+					for (Iterator<String> it = userStacks.iterator(); it.hasNext();) {
+						String currentStack = it.next();
+						
+					    if (currentStack.equalsIgnoreCase(_stack)) {
+					    	hasFound = true;
+					    	it.remove();
+					    }
+					} 
+					
+//					for (String currentStack: userStacks) {
+//						if (currentStack.equalsIgnoreCase(_stack)) {
+//							hasFound = true;
+//							userStacks.remove(currentStack);
+//						}
+//					}
 
 					if (!hasFound) {
 						userStacks.add(_stack);

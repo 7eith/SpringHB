@@ -17,14 +17,14 @@
   "role" : "USER",
   "username" : "dd",
   "password" : "$2a$10$6Lsn4xYeLHVq2KIon5sfwOrFCpsPKTy3kQwEG94uhEZNOy9p.j5o2",
-  "stacks" : [ "ANGULAR", "JAVA", "PHP", "NOSQL", "VUE", "SYMFONY" ],
+  "stacks" : [ "ANGULAR", "NOSQL", "VUE", "SYMFONY" ],
   "message" : "Un développeur sans café est un homme Mort"
 }, {
   "id" : 4,
   "role" : "USER",
   "username" : "dd",
   "password" : "$2a$10$d73g8TbvL4d/nY6oxHTGhuj8mHFhPCqxRff1ZnjduBYzvWTTJNMlC",
-  "stacks" : [ "ANGULAR", "JAVA", "PHP", "NOSQL", "VUE", "SYMFONY" ],
+  "stacks" : [ "ANGULAR", "NOSQL", "VUE", "SYMFONY" ],
   "message" : "Un développeur sans café est un homme Mort"
 }, {
   "id" : 5,
