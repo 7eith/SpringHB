@@ -1,0 +1,36 @@
+[ {
+  "id" : 1,
+  "role" : "USER",
+  "username" : "user",
+  "password" : "$2a$12$a5uMRm0MNoSWZmZ3c1ZsYeDppRyTxorA54Ubmp3ShZTOwaUKIvOku",
+  "stacks" : null,
+  "message" : null
+}, {
+  "id" : 2,
+  "role" : "ADMIN",
+  "username" : "admin",
+  "password" : "$2a$12$5Imjk1at5PVBS3CyKSXBKOJu2pdlbGQxFJB79UBA6CwrAPRpw6f4K",
+  "stacks" : null,
+  "message" : null
+}, {
+  "id" : 3,
+  "role" : "USER",
+  "username" : "dd",
+  "password" : "$2a$10$6Lsn4xYeLHVq2KIon5sfwOrFCpsPKTy3kQwEG94uhEZNOy9p.j5o2",
+  "stacks" : [ "ANGULAR", "JAVA", "PHP", "NOSQL", "VUE", "SYMFONY" ],
+  "message" : "Un développeur sans café est un homme Mort"
+}, {
+  "id" : 4,
+  "role" : "USER",
+  "username" : "dd",
+  "password" : "$2a$10$d73g8TbvL4d/nY6oxHTGhuj8mHFhPCqxRff1ZnjduBYzvWTTJNMlC",
+  "stacks" : [ "ANGULAR", "JAVA", "PHP", "NOSQL", "VUE", "SYMFONY" ],
+  "message" : "Un développeur sans café est un homme Mort"
+}, {
+  "id" : 5,
+  "role" : "USER",
+  "username" : "register",
+  "password" : "$2a$10$vQNusXU5ci2brF.d51X86Orxv/JKKu/mzZAePS10reyHhpuzW/S7m",
+  "stacks" : [ "JAVA" ],
+  "message" : null
+} ]

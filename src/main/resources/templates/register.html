@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Blue Bird • Register</title>
+</head>
+<body>
+	Inscrivez-vous !
+	
+	<form th:action="@{register}" th:object="${user}" method="post">
+		<input type="text" th:field="*{_username}" /> <br /> 
+		<input type="password" th:field="*{_password}" /> <br /> 
+		<input type="submit" value="Register" />
+	</form>
+</body>
+</html>

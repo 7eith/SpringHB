@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Blue Bird • App</title>
+</head>
+<body>
+	<h1>Blue Bird</h1>
+	<h2>Ce que vous dites au monde: <span th:text="${message}" /></h2>
+	<form th:action="@{/app/profile/updateMessage}" method="post">
+		<input type="text" value="Un développeur sans café est un homme Mort" name="message"/>
+		<input type="submit" value="Propagez mon idée" />
+	</form>
+	<h2>Vos stacks !</h2>
+	<table>
+		<thead>
+			<tr>
+				<th>Stack</th>
+				<th>Content</th>
+			<tr>
+		</thead>
+		<tbody>
+			<tr th:each="stack: ${stacks}">
+				<td><span th:text="${stack}" /></td>
+				<td>WIP !</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>Selectionnez vos stacks !</h2>
+	<table>
+		<thead>
+			<tr>
+				<th>Stacks</th>
+				<th>Action</th>
+			<tr>
+		</thead>
+		<tbody>
+			<tr th:each="stack: ${availableStacks}">
+				<td><span th:text="${stack}" /></td>
+				<td>	
+					<form th:action="@{/app/profile/updateStack}" method="post">
+						<input type="text" th:value="${stack}" name="stackName"/>
+						<input type="submit" value="Toggle" />
+					</form>
+				</td>
+			</tr>
+			
+		</tbody>
+	</table>
+</body>
+</html>
